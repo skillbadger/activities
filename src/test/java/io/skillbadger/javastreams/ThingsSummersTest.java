@@ -1,6 +1,5 @@
 package io.skillbadger.javastreams;
 
-import io.skillbadger.javastreams.summer.StreamThingsSummer;
 import io.skillbadger.javastreams.summer.ClassicalThingsSummer;
 import io.skillbadger.javastreams.summer.ThingsSummer;
 import io.skillbadger.javastreams.things.BarThing;
@@ -51,8 +50,7 @@ class ThingsSummersTest {
 
   private static ThingsSummer[] getSummers() {
     return new ThingsSummer[] {
-        new ClassicalThingsSummer(),
-        new StreamThingsSummer()
+        new ClassicalThingsSummer()
     };
   }
 
