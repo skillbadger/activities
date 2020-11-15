@@ -12,8 +12,8 @@ public class UnaryOperatorTest {
     public void explicit() {
         UnaryOperator<String> unaryOperator = new UnaryOperator<String>() {
             @Override
-            public String apply(String unaryT) {
-                return unaryT.toUpperCase();
+            public String apply(String string) {
+                return string.toUpperCase();
             }
         };
         String result = unaryOperator.apply("hello");
@@ -22,7 +22,7 @@ public class UnaryOperatorTest {
 
     @Test
     public void lambda() {
-        UnaryOperator<String> unaryOperator = unaryT -> unaryT.toUpperCase();
+        UnaryOperator<String> unaryOperator = string -> string.toUpperCase();
         String result = unaryOperator.apply("hello");
         assertEquals("HELLO", result);
     }

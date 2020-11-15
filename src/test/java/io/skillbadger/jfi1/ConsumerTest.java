@@ -15,8 +15,8 @@ public class ConsumerTest {
         List<String> strings = new ArrayList<>();
         Consumer<String> consumer = new Consumer<String>() {
             @Override
-            public void accept(String consumerT) {
-                strings.add(consumerT);
+            public void accept(String string) {
+                strings.add(string);
             }
         };
         consumer.accept("hello");
@@ -26,7 +26,7 @@ public class ConsumerTest {
     @Test
     public void lambda() {
         List<String> strings = new ArrayList<>();
-        Consumer<String> consumer = consumerT -> strings.add(consumerT);
+        Consumer<String> consumer = string -> strings.add(string);
         consumer.accept("hello");
         assertEquals("hello", strings.get(0));
     }
