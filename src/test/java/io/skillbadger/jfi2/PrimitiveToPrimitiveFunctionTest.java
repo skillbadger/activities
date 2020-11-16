@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.IntToLongFunction;
 
-class FunctionsConvertingPrimitiveTypeTest {
+class PrimitiveToPrimitiveFunctionTest {
 
     @Test
     void explicitFunction() {
