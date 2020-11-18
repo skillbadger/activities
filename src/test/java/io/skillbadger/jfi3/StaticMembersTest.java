@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StaticFunctionsTest {
+public class StaticMembersTest {
 
     @Test
     void identityFunction() {
