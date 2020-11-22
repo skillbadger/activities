@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.skillbadger</groupId>
-    <artifactId>java-streams-2</artifactId>
+    <artifactId>java-streams-challenges</artifactId>
     <version>1.0.0</version>
     <build>
         <plugins>
